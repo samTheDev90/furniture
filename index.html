@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture</title>
+    <!-- <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="fontawesome.min.css" /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kenia&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- container -->
+    <div class="loader">
+      <svg
+        class="pl"
+        viewBox="0 0 200 200"
+        width="200"
+        height="200"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+            <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+            <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+          </linearGradient>
+          <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+            <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+          </linearGradient>
+        </defs>
+        <circle
+          class="pl__ring"
+          cx="100"
+          cy="100"
+          r="82"
+          fill="none"
+          stroke="url(#pl-grad1)"
+          stroke-width="36"
+          stroke-dasharray="0 257 1 257"
+          stroke-dashoffset="0.01"
+          stroke-linecap="round"
+          transform="rotate(-90,100,100)"
+        />
+        <line
+          class="pl__ball"
+          stroke="url(#pl-grad2)"
+          x1="100"
+          y1="18"
+          x2="100.01"
+          y2="182"
+          stroke-width="36"
+          stroke-dasharray="1 165"
+          stroke-linecap="round"
+        />
+      </svg>
+    </div>
+    <div class="container">
+      <!-- navbar -->
+      <nav class="nav">
+        <div class="nav-top">
+          <div class="logo">
+            <i class="fa-solid fa-couch"></i>
+            <span>Furniture</span>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="What are you looking for?" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="user">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>$0.00</span>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div><i class="fa-solid fa-house"></i> <span>Home</span></div>
+          <div><i class="fa-solid fa-couch"></i> <span>Products</span></div>
+          <div>
+            <i class="fa-solid fa-dollar-sign"></i> <span>Pricing</span>
+          </div>
+          <div><i class="fa-brands fa-blogger"></i> <span>Blog</span></div>
+          <div><i class="fa-solid fa-star"></i> <span>Sales</span></div>
+          <div><i class="fa-solid fa-message"></i> <span>Contact</span></div>
+        </div>
+      </nav>
+
+      <!--end of navbar -->
+      <!-- main -->
+      <section class="landing" id="landing">
+        <div class="landing-bg"></div>
+        <div class="banner">
+          <img src="imgs/Furniture.jpg" alt="" class="banner-img" />
+          <h1 class="banner-heading">Luxury Furniture</h1>
+          <button class="banner-btn banner-btn-1">Go to shop</button>
+          <button class="banner-btn banner-btn-2">explore</button>
+        </div>
+      </section>
+
+      <section class="products" id="products">
+        <div class="products-top">
+          <h3>Search for</h3>
+          <h2>1500</h2>
+          <h1>Products</h1>
+        </div>
+        <div class="products-icon">
+          <div class="bedroom">
+            <img src="imgs/bedroom.png" alt="" />
+            <span>Bedroom</span>
+          </div>
+          <div class="buffet">
+            <img src="imgs/buffet.png" alt="" />
+            <span>Buffet</span>
+          </div>
+          <div class="dining">
+            <img src="imgs/dining.png" height="35%" alt="" />
+            <span>Dining</span>
+          </div>
+          <div class="sofa">
+            <img src="imgs/sofa.png" alt="" />
+            <span>Sofa</span>
+          </div>
+          <div class="table">
+            <img src="imgs/table.png" alt="" />
+            <span>Table</span>
+          </div>
+          <div class="wardrobe">
+            <img src="imgs/wardrobe.png" alt="" />
+            <span>Wardrobe</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="pricing-top">
+          <img src="imgs/sofaBG.png" />
+          <div class="price-top-content">
+            <h1>Get Ready for Ramadan</h1>
+            <button>Actual Trends</button>
+          </div>
+        </div>
+        <div class="pricing-cards">
+          <div class="pricing-card">
+            <div class="pricing-card-icons">
+              <i class="fa-solid fa-link"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+            <div class="img-wrapper">
+              <img src="imgs/armchair.png" height="alt" ="" />
+            </div>
+            <h3>Armchair</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$99.00</h4>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-card-icons">
+              <i class="fa-solid fa-link"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+            <div class="img-wrapper">
+              <img src="imgs/couch.png" height="alt" ="" />
+            </div>
+            <h3>Couch</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h4>$129.00</h4>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-card-icons">
+              <i class="fa-solid fa-link"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+            <div class="img-wrapper">
+              <img src="imgs/lighting.png" height="alt" ="" />
+            </div>
+            <h3>Lighting</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$59.00</h4>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-card-icons">
+              <i class="fa-solid fa-link"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+            <div class="img-wrapper">
+              <img src="imgs/sofa-pr.png" height="alt" ="" />
+            </div>
+            <h3>Sofa</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h4>$89.00</h4>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-card-icons">
+              <i class="fa-solid fa-link"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+            <div class="img-wrapper">
+              <img src="imgs/table-pr.png" height="alt" ="" />
+            </div>
+            <h3>Table</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$49.00</h4>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-card-icons">
+              <i class="fa-solid fa-link"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+            <div class="img-wrapper">
+              <img src="imgs/wardrobe-pr.png" height="alt" ="" />
+            </div>
+            <h3>wardrobe</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h4>$599.00</h4>
+          </div>
+        </div>
+        <button>Go to shop</button>
+      </section>
+
+      <section class="blog">
+        <div class="blog-content">
+          <div class="blog-top">
+            <div class="magazine">
+              <img src="imgs/magazine.png" alt="" />
+            </div>
+            <div class="trends">
+              <h1>Summer trends 2024</h1>
+              <button>Download</button>
+            </div>
+          </div>
+          <div class="blog-articles">
+            <div class="article">
+              <span>1</span>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+            <div class="article">
+              <span>2</span>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+            <div class="article">
+              <span>3</span>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact-content">
+          <div class="content-left">
+            <h2>Subscribe to our newsletter and grab <span>30% OFF</span></h2>
+          </div>
+          <div class="content-right">
+            <input
+              type="email"
+              placeholder="
+          Your E-mail address...."
+            />
+            <button>Sign up</button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="copyright">
+          <p>&copy; All Rights reserved 2024. Created by Samaun Hossain</p>
+        </div>
+        <div class="brand">
+          <i class="fa-solid fa-couch"></i>
+          <h1>Furniture</h1>
+        </div>
+      </footer>
+    </div>
+    <!--end of container -->
+    <script
+      src="https://kit.fontawesome.com/2e59c6ba34.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
